@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		FE6B13802B923F320084E9D6 /* qiita_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6B137F2B923F320084E9D6 /* qiita_appApp.swift */; };
-		FE6B13822B923F320084E9D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6B13812B923F320084E9D6 /* ContentView.swift */; };
 		FE6B13842B923F330084E9D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE6B13832B923F330084E9D6 /* Assets.xcassets */; };
 		FE6B13872B923F330084E9D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE6B13862B923F330084E9D6 /* Preview Assets.xcassets */; };
+		FEF4382B2B99EBB7008F3C8E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF438292B99EBB7008F3C8E /* User.swift */; };
+		FEF4382C2B99EBB7008F3C8E /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF4382A2B99EBB7008F3C8E /* Article.swift */; };
+		FEF4382F2B99EBC4008F3C8E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF4382E2B99EBC4008F3C8E /* APIService.swift */; };
+		FEF438362B99EBCA008F3C8E /* ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF438312B99EBCA008F3C8E /* ArticleRowView.swift */; };
+		FEF438372B99EBCA008F3C8E /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF438332B99EBCA008F3C8E /* WebView.swift */; };
+		FEF438382B99EBCA008F3C8E /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF438342B99EBCA008F3C8E /* ArticleDetailView.swift */; };
+		FEF438392B99EBCA008F3C8E /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF438352B99EBCA008F3C8E /* ArticleListView.swift */; };
+		FEF4383C2B99EBD2008F3C8E /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF4383B2B99EBD2008F3C8E /* ArticleListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FE6B137C2B923F320084E9D6 /* qiita-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "qiita-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6B137F2B923F320084E9D6 /* qiita_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qiita_appApp.swift; sourceTree = "<group>"; };
-		FE6B13812B923F320084E9D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FE6B13832B923F330084E9D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE6B13862B923F330084E9D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FEF438292B99EBB7008F3C8E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FEF4382A2B99EBB7008F3C8E /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		FEF4382E2B99EBC4008F3C8E /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		FEF438312B99EBCA008F3C8E /* ArticleRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleRowView.swift; sourceTree = "<group>"; };
+		FEF438332B99EBCA008F3C8E /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		FEF438342B99EBCA008F3C8E /* ArticleDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
+		FEF438352B99EBCA008F3C8E /* ArticleListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
+		FEF4383B2B99EBD2008F3C8E /* ArticleListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				FE6B137F2B923F320084E9D6 /* qiita_appApp.swift */,
-				FE6B13812B923F320084E9D6 /* ContentView.swift */,
+				FEF4383A2B99EBD2008F3C8E /* ViewModels */,
+				FEF438302B99EBCA008F3C8E /* Views */,
+				FEF4382D2B99EBC4008F3C8E /* Services */,
+				FEF438282B99EBB7008F3C8E /* Models */,
 				FE6B13832B923F330084E9D6 /* Assets.xcassets */,
 				FE6B13852B923F330084E9D6 /* Preview Content */,
 			);
@@ -65,6 +82,50 @@
 				FE6B13862B923F330084E9D6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FEF438282B99EBB7008F3C8E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FEF438292B99EBB7008F3C8E /* User.swift */,
+				FEF4382A2B99EBB7008F3C8E /* Article.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FEF4382D2B99EBC4008F3C8E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FEF4382E2B99EBC4008F3C8E /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FEF438302B99EBCA008F3C8E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FEF438322B99EBCA008F3C8E /* Common */,
+				FEF438342B99EBCA008F3C8E /* ArticleDetailView.swift */,
+				FEF438312B99EBCA008F3C8E /* ArticleRowView.swift */,
+				FEF438352B99EBCA008F3C8E /* ArticleListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FEF438322B99EBCA008F3C8E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FEF438332B99EBCA008F3C8E /* WebView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FEF4383A2B99EBD2008F3C8E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FEF4383B2B99EBD2008F3C8E /* ArticleListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +198,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE6B13822B923F320084E9D6 /* ContentView.swift in Sources */,
+				FEF4382C2B99EBB7008F3C8E /* Article.swift in Sources */,
+				FEF4382F2B99EBC4008F3C8E /* APIService.swift in Sources */,
 				FE6B13802B923F320084E9D6 /* qiita_appApp.swift in Sources */,
+				FEF438382B99EBCA008F3C8E /* ArticleDetailView.swift in Sources */,
+				FEF438362B99EBCA008F3C8E /* ArticleRowView.swift in Sources */,
+				FEF4382B2B99EBB7008F3C8E /* User.swift in Sources */,
+				FEF438392B99EBCA008F3C8E /* ArticleListView.swift in Sources */,
+				FEF438372B99EBCA008F3C8E /* WebView.swift in Sources */,
+				FEF4383C2B99EBD2008F3C8E /* ArticleListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
