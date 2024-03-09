@@ -18,6 +18,7 @@
 		FEF438382B99EBCA008F3C8E /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF438342B99EBCA008F3C8E /* ArticleDetailView.swift */; };
 		FEF438392B99EBCA008F3C8E /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF438352B99EBCA008F3C8E /* ArticleListView.swift */; };
 		FEF4383C2B99EBD2008F3C8E /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF4383B2B99EBD2008F3C8E /* ArticleListViewModel.swift */; };
+		FEF4383E2B9CA093008F3C8E /* ErrorStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF4383D2B9CA093008F3C8E /* ErrorStateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		FEF438342B99EBCA008F3C8E /* ArticleDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
 		FEF438352B99EBCA008F3C8E /* ArticleListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
 		FEF4383B2B99EBD2008F3C8E /* ArticleListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
+		FEF4383D2B9CA093008F3C8E /* ErrorStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				FEF438332B99EBCA008F3C8E /* WebView.swift */,
+				FEF4383D2B9CA093008F3C8E /* ErrorStateView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				FEF438392B99EBCA008F3C8E /* ArticleListView.swift in Sources */,
 				FEF438372B99EBCA008F3C8E /* WebView.swift in Sources */,
 				FEF4383C2B99EBD2008F3C8E /* ArticleListViewModel.swift in Sources */,
+				FEF4383E2B9CA093008F3C8E /* ErrorStateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
