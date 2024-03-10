@@ -21,7 +21,9 @@ struct ArticleListView: View {
                 }
             case .loaded(.failure):
                 ErrorStateView {
-                    viewmodel.fetchArticles()
+                    Task {
+                        await viewmodel.fetchArticles()
+                    }
                 }
             }
         }
@@ -30,8 +32,8 @@ struct ArticleListView: View {
                 ProgressView()
             }
         }
-        .onAppear {
-            viewmodel.fetchArticles()
+        .task {
+            await viewmodel.fetchArticles()
         }
     }
 }

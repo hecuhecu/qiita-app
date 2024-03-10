@@ -14,22 +14,18 @@ enum DataState {
     }
 }
 
+@MainActor
 class ArticleListViewModel: ObservableObject {
     @Published var dataState: DataState = .idle
 
-    func fetchArticles() {
+    func fetchArticles() async {
         if dataState.isLoading { return }
         dataState = .loading
         
-        APIService.shared.fetchArticles { result in
-            DispatchQueue.main.async {
-                switch result{
-                case .success(let fetchedArticles):
-                    self.dataState = .loaded(.success(fetchedArticles))
-                case .failure(let error):
-                    self.dataState = .loaded(.failure(error))
-                }
-            }
+        do {
+            dataState = .loaded(.success(try await APIService.shared.fetchArticles()))
+        } catch {
+            dataState = .loaded(.failure(error))
         }
     }
 }
