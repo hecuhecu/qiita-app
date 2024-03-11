@@ -9,5 +9,5 @@ struct ArticleDetailView: View {
 }
 
 #Preview {
-    ArticleDetailView(article: mockArticle[0])
+    ArticleDetailView(article: .stub())
 }

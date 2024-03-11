@@ -23,5 +23,5 @@ struct ArticleRowView: View {
 }
 
 #Preview {
-    ArticleRowView(article: mockArticle[0])
+    ArticleRowView(article: .stub())
 }

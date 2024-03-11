@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ArticleListView: View {
-    @ObservedObject var viewmodel = ArticleListViewModel()
+    @StateObject var viewmodel: ArticleListViewModel
     
     var body: some View {
         Group {
@@ -39,5 +39,5 @@ struct ArticleListView: View {
 }
 
 #Preview {
-    ArticleListView()
+    ArticleListView(viewmodel: ArticleListViewModel())
 }
