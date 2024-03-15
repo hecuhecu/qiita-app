@@ -12,8 +12,7 @@ final class APIService {
         
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let dataTask = AF.request(urlString).serializingDecodable([Article].self, decoder: decoder)
-        let value = try await dataTask.value
+        let value = try await AF.request(urlString).serializingDecodable([Article].self, decoder: decoder).value
         return value
     }
 }
