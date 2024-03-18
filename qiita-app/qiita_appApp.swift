@@ -4,7 +4,8 @@ import SwiftUI
 struct qiita_appApp: App {
     var body: some Scene {
         WindowGroup {
-            ArticleListView(viewmodel: ArticleListViewModel())
+            MainView()
+                .environmentObject(ArticleListViewModel())
         }
     }
 }

@@ -7,7 +7,7 @@ final class APIService {
     
     public func fetchArticles() async throws -> [Article] {
         let baseUrlString = "https://qiita.com/api/v2/items?"
-        let searchPath = "per_page=100"
+        let searchPath = "per_page=20"
         let urlString = baseUrlString + searchPath
         
         let decoder = JSONDecoder()
