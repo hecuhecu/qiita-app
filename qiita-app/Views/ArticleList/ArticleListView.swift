@@ -31,7 +31,6 @@ struct ArticleListView: View {
         .onAppear() {
             if isInitialOnAppear {
                 Task {
-                    print("xi")
                     await viewmodel.fetchArticles()
                 }
                 
